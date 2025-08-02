@@ -1,0 +1,21 @@
+{
+  "name": "Ceiling Measure App",
+  "short_name": "CeilingApp",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "gcm_sender_id": "103953800507",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}

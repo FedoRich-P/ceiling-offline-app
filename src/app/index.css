@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.btn {
+  @apply bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600;
+}
+.btn-danger {
+  @apply bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600;
+}
+.btn-lite {
+  @apply bg-gray-200 text-black px-3 py-1 rounded hover:bg-gray-300;
+}
+.btn-red {
+  @apply text-red-600 hover:text-red-800 px-2;
+}
+.input {
+  @apply border px-2 py-1 rounded w-full;
+}

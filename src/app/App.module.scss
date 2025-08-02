@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftPanel,
+.rightPanel {
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #f3f4f6;
+  padding: 1rem;
+  overflow-y: auto;
+  border-color: #d1d5db;
+}
+
+.leftPanel {
+  width: 10%;
+  border-right: 1px solid;
+}
+
+.rightPanel {
+  width: 13%;
+  border-left: 1px solid;
+}
+
+.canvasSection {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.canvas {
+  width: 50%;
+  border-right: 1px solid #d1d5db;
+  overflow: hidden;
+}
+
+.duplicate {
+  width: 50%;
+  overflow: hidden;
+}

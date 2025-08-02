@@ -1,0 +1,29 @@
+.container {
+  margin-top: 1rem;
+  max-width: 28rem;
+  overflow-x: auto;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.table {
+  width: 100%;
+  table-layout: auto;
+  font-size: 0.875rem;
+}
+
+.thead {
+  background-color: #f3f4f6;
+}
+
+.cell {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  text-align: center;
+}
+
+.segmentName {
+  font-weight: 500;
+}

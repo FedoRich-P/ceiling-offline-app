@@ -17,36 +17,17 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        // Настройка имени чанка (включая entry, dynamic imports и vendor chunks)
         entryFileNames: 'assets/[name].[hash].js',
         chunkFileNames: 'assets/chunks/[name].[hash].js',
         assetFileNames: 'assets/[ext]/[name].[hash].[ext]',
 
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            // Пример разбивки на конкретные крупные либы:
-            if (id.includes('react')) {
-              return 'vendor-react';
-            }
-            if (id.includes('lodash')) {
-              return 'vendor-lodash';
-            }
-            if (id.includes('some-big-lib')) {
-              return 'vendor-some-big-lib';
-            }
-            // Все остальное в общий вендор:
-            return 'vendor';
-          }
-
-          // Разделение по папкам проекта, если нужно
-          if (id.includes('src/components/')) {
-            return 'components';
-          }
-          if (id.includes('src/utils/')) {
-            return 'utils';
-          }
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          konva: ['konva', 'react-konva'],
+          redux: ['@reduxjs/toolkit', 'react-redux'],
+          router: ['react-router']
         }
       }
     }
-  }
+  },
 })

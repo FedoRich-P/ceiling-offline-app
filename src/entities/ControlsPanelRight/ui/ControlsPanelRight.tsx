@@ -133,7 +133,7 @@ export function ControlsPanelRight({ className }: ControlsPanelRightProps) {
                 </div>
             </div>
 
-            <div className={styles.section}>
+            <div className={clsx(styles.section, styles.dops)}>
                 <h3 className={styles.sectionTitle}>Добавленные элементы</h3>
                 <div className={styles.iconList}>
                     {icons.length === 0 && <p style={{ fontSize: 14, color: '#666' }}>Нет добавленных элементов.</p>}

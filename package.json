@@ -28,7 +28,6 @@
     "react-router": "^7.7.1",
     "sass": "^1.89.2",
     "tailwindcss": "^4.1.11",
-    "uui": "^1.0.7",
     "uuid": "^11.1.0"
   },
   "devDependencies": {
@@ -43,6 +42,6 @@
     "globals": "^16.3.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
-    "vite": "^7.0.4"
+    "vite": "^5.4.19"
   }
 }
